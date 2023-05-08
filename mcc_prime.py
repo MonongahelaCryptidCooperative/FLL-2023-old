@@ -160,39 +160,13 @@ class PrimeRobot(object):
 
     def line_square_black(self, speed:int = 50):
         "Square on a black line, can tell how fast to drive"
-        drive_base = self.drive_base
-        light_settings = self.light_settings
-        left = False
-        right = False
-        drive_base.stop()
-        drive_base.run_single_motor(Side.LEFT, speed)
-        drive_base.run_single_motor(Side.RIGHT, speed)
-        while (not left or not right):
-            if self.reflectance_check(Side.LEFT, lessthan, light_settings.BLACK):
-                drive_base.hold_single_motor(Side.LEFT)
-                left = True
-            if self.reflectance_check(Side.RIGHT, lessthan, light_settings.BLACK):
-                drive_base.hold_single_motor(Side.RIGHT)
-                right = True
+        pass
 
 
     def line_square_threshold(self, operator):
         """line square on the threshold value. Needs an operator depending on 
         whether it is crossing the black or white line first"""
-        drive_base = self.drive_base
-        light_settings = self.light_settings
-        left = False
-        right = False
-        drive_base.stop()
-        drive_base.run_single_motor(Side.LEFT, speed)
-        drive_base.run_single_motor(Side.RIGHT, speed)
-        while (not left or not right):
-            if self.reflectance_check(Side.LEFT, operator, light_settings.THRESHOLD):
-                drive_base.hold_single_motor(Side.LEFT)
-                left = True
-            if self.reflectance_check(Side.RIGHT, operator, light_settings.THRESHOLD):
-                drive_base.hold_single_motor(Side.RIGHT)
-                right = True
+        pass
 
 
 
@@ -201,40 +175,7 @@ class PrimeRobot(object):
         the black line will be on the sensor. Also takes the speed to travel and a 
         minimum distance. The minimum distance prevents the bot from 'tripping' on
         a white line."""
-        drive_base = self.drive_base
-        light_base = self.light_base
-        light_settings = self.light_settings
-        THRESHOLD = light_settings.THRESHOLD
-        WHITE = light_settings.WHITE
-        BLACK = light_settings.BLACK
-        p_coef = light_settings.porportional_coef
-        drive_base.reset()
-        if sensor_side == Side.LEFT:
-            opposite_sensor = Side.RIGHT
-        elif sensor_side == Side.RIGHT:
-            opposite_sensor = Side.LEFT
-        if stop_on_white:
-            while (self.reflectance_check(opposite_sensor, lessthan, light_settings.WHITE) or (drive_base.distance() < min_dist)):
-                if(black_line_side == Side.LEFT):
-                    error = THRESHOLD - light_base.reflectance(sensor_side)
-                elif(black_line_side == Side.RIGHT):
-                    error = light_base.reflectance(sensor_side) - THRESHOLD
-                else: 
-                    print("Can only equal Right or Left")
-                turning = error * p_coef
-                drive_base.drive(speed, turning)
-            
-        else:
-            while (drive_base.distance() < min_dist):
-                if(black_line_side == Side.LEFT):
-                    error = THRESHOLD - light_base.reflectance(sensor_side)
-                elif(black_line_side == Side.RIGHT):
-                    error = light_base.reflectance(sensor_side) - THRESHOLD
-                else: 
-                    print("Can only equal Right or Left")
-                turning = error * p_coef 
-                drive_base.drive(speed, turning)
-        drive_base.stop()
+        pass
     
 
     ### Line finding fuctions (run prior to running line following)
@@ -242,21 +183,7 @@ class PrimeRobot(object):
     ### Or fine white line, cross over black line,
     ### and find threshold on opposite side 
     def find_line(self, side:Side, speed:int = 100):
-        drive_base = self.drive_base
-        light_settings = self.light_settings
-        while self.reflectance_check(side, lessthan, light_settings.WHITE):
-            drive_base.drive(speed, 0)
-        while self.reflectance_check(side, greaterthan, light_settings.THRESHOLD):
-            drive_base.drive(speed/2, 0)
-        drive_base.stop()
+        pass
     
     def find_line_crossover(self, side:Side, speed:int = 100):
-        drive_base = self.drive_base
-        light_settings = self.light_settings
-        while self.reflectance_check(side, lessthan, light_settings.WHITE):
-            drive_base.drive(speed, 0)
-        while self.reflectance_check(side, greaterthan, light_settings.BLACK):
-            drive_base.drive(speed/2, 0)
-        while self.reflectance_check(side, lessthan, light_settings.THRESHOLD):
-            drive_base.drive(speed/2, 0)
-        drive_base.stop()
+        pass
