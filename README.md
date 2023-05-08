@@ -38,4 +38,4 @@ the left/right up/down buttons on the opposite side to control the attachment mo
 
 
 We have included all of the code for our 2022 superpowered runs in the ets_superpowered_programs (we used to be called exploding toaster supernova) as demo code. 400 points is coded (got 375 in real life).
-Did not code moving the truck with the barrels in it. 
+Did not code moving the truck with the barrels in it. Removed code for line following/line squaring so missions will not run correctly. 
