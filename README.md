@@ -38,4 +38,6 @@ the left/right up/down buttons on the opposite side to control the attachment mo
 
 
 We have included all of the code for our 2022 superpowered runs in the ets_superpowered_programs (we used to be called exploding toaster supernova) as demo code. 400 points is coded (got 375 in real life).
-Did not code moving the truck with the barrels in it. Removed code for line following/line squaring so missions will not run correctly. 
+Would advise watching a run with teh code open to get some ideas of how you might accomplish things in future years (though we are no where near as advanced in our mechanical engineering as some of the top world's teams). https://www.youtube.com/watch?v=I4g1R-PBdCY&t=16746s. Our Run starts at 4:36:00. Did not code moving the truck with the barrels in it. Removed code for line following/line squaring so missions will not run correctly. 
+
+Hope this helps everyone up their robot game! Would love to be beaten by someone who found this code useful! We are also actively working on a block interface that will basically allow programming a pybricks bot with blocks. Stay Tuned!
