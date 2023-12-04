@@ -58,6 +58,4 @@ Launching program/runs is done via pressing the bluetooth button (our robot had 
 
 To pair with a remote select/launch the program labeled "R". Then push the center button on the lego bluetooth remote. The Red LEFT/RIGHT buttons act as macros and, when held down, will cause the left/right up/down buttons on the opposite side to control the attachment motors.A cool feature of the remote is that if you push both the left and right buttons it will print off how far the robot has driven, turned, and how many degrees the attachment motors have moved. This is very useful for programming the robot.
 
-We have included all of the code for our 2023-2024 Masterpiece runs in the zif_masterpiece_programs file. A video of our performance can be seen here;https://youtu.be/jPaWqd5SM1U?si=mEACfuPGs_pU4lnI
-
 Hope this helps everyone up their robot game! Would love to be beaten by someone who found this code useful! We are also wokring on starter code for using hte new Pybrick's block interface. 

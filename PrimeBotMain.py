@@ -14,8 +14,6 @@ from mcc_universal_classes import *
 ### Choose which programs to load from the modules. 
 ### MAY NEED TO LOAD DIFFERENT PROGRAMS/CHANGE THIS CODE
 from mcc_default_programs import *
-from zif_masterpiece_programs import ROLLINGCAMERA, STAGE, CHICKEN, LIGHT_SHOW
-from zif_masterpiece_programs import SCENE_CHANGE, CINEMA, MIXINGBOARD
 from mcc_rc_programs import *
 
 ### Music and Icons 
@@ -46,11 +44,10 @@ TEST = RobotProgram(test_func, "M", Color.YELLOW)
  Choose which programs you want displayed/loaded to the bot.
   WILL NEED TO CHANGE AS NEEDED
  """
-PROGRAM_LIST = [ROLLINGCAMERA, STAGE, CHICKEN, LIGHT_SHOW, SCENE_CHANGE, CINEMA,
- MIXINGBOARD, TEST, RC_MODE_PROGRAM, LIGHT_CALIBRATION_PROGRAM,
+PROGRAM_LIST = [TEST, RC_MODE_PROGRAM, LIGHT_CALIBRATION_PROGRAM,
   TURN_CALLIBRATION_PROGRAM, STRAIGHT_CALLIBRATION_PROGRAM]
 
-RC_LIST = [DEFAULT_RC_PROGRAM, DUALMOTOR_RC_PROGRAM]
+RC_LIST = [DEFAULT_RC_PROGRAM]
 
 
 ### Constants (Can change as needed)
