@@ -16,7 +16,7 @@ if you are very far away from West Virginia.
 Instructions to use (will create better tutorials later):
 oad all of the .py files into pybricks
 If you are using a spike prime hub go to the PrimeBotMain.py file. Compile and load this to the hub.
-If you are using a technic hub go to the TechnicBotMain.py file and complile and load to the hub (we cannot afford multiple spike hubs so we make experimental robots using chearping 4-port technic hubs, they are actually quite capable and, if allowed, could have completed this year's robot game)
+If you are using a technic hub go to the TechnicBotMain.py file and complile and load to the hub (we cannot afford multiple spike hubs so we make experimental robots using cheap 4-port technic hubs, they are actually quite capable and, if allowed, could have completed this year's robot game)
 
 
 Code assumes left drive motor is A, right drive motor is B
@@ -52,13 +52,11 @@ Robot will drive 1/2 meter constantly compairing values and report the maximal a
 
 
 In order to switch programs on a spike hub you have to press both the center button and the left or right button at the same time
-This was done as our team members would accidently bump the arrow buttons.. 
+This was done as our team members would accidently bump the arrow buttons. Given that the code auto advances you shouldn't be using these buttons during a match anyways.
 
 Launching program/runs is done via pressing the bluetooth button (our robot had a unique design that blocked the center button when attachments were in place). You may wish to change this in the code
 
-To pair with a remote select/launch the program labeled "R". Then push the center button on the lego bluetooth remote. The Red LEFT/RIGHT buttons act as macros and, when held down, will cause the left/right up/down buttons on the opposite side to control the attachment motors.
-
-A cool feature of the remote is that if you push both the left and right buttons it will print off how far the robot has driven, turned, and how many degrees the attachment motors have moved. This is very useful for programming the robot.
+To pair with a remote select/launch the program labeled "R". Then push the center button on the lego bluetooth remote. The Red LEFT/RIGHT buttons act as macros and, when held down, will cause the left/right up/down buttons on the opposite side to control the attachment motors.A cool feature of the remote is that if you push both the left and right buttons it will print off how far the robot has driven, turned, and how many degrees the attachment motors have moved. This is very useful for programming the robot.
 
 We have included all of the code for our 2023-2024 Masterpiece runs in the zif_masterpiece_programs file. A video of our performance can be seen here;https://youtu.be/jPaWqd5SM1U?si=mEACfuPGs_pU4lnI
 
